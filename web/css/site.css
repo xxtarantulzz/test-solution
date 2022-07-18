@@ -122,5 +122,5 @@ a.desc:after {
     font-size: inherit;
 }
 .nav.navbar-nav>li>a{
-    color: wheat;
+    color: wheat !important
 }

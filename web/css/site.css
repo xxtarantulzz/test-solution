@@ -121,3 +121,6 @@ a.desc:after {
 .form-control{
     font-size: inherit;
 }
+.nav.navbar-nav>li>a{
+    color: wheat;
+}

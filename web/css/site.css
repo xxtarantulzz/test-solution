@@ -114,3 +114,10 @@ a.desc:after {
     opacity: 1;
     padding-top: 10%;
 }
+
+.btn{
+    font-size: inherit;
+}
+.form-control{
+    font-size: inherit;
+}

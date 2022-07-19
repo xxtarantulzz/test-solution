@@ -29,8 +29,10 @@ $('body').on('click', '.modal-footer .bootstrap-dialog-footer-buttons .btn.btn-d
 //поменять название категории без перезагрузки
 $('.category-list-item span.category-name').click(function () {
     let name = prompt('Введіть нову назву?', $(this).text());
-    $(this).text(name);
+    if(name){
+        $(this).text(name);
 
-    let id = $(this).data('id');
-    $.post("/category/ajax-change-name", {id: id, name: name});
+        let id = $(this).data('id');
+        $.post("/category/ajax-change-name", {id: id, name: name});
+    }
 });

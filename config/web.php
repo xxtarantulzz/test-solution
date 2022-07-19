@@ -19,6 +19,10 @@ $config = [
             'cookieValidationKey' => 'AhnRysJ6GnpTGki2zUeHihcB4MLtK6zO',
             'baseUrl' => ''
         ],
+        'image' => [
+            'class' => 'yii\image\ImageDriver',
+            'driver' => 'GD'
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],

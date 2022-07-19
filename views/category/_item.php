@@ -21,7 +21,7 @@ $hasChildren = isset($category['children']);
             <i class="fa fa-arrows"></i>
         </a>
 
-        <span><?= $category['name'] ?></span>
+        <span class="category-name" data-id="<?= $category['id']; ?>" title="Нажміть, щоб змінити назву категорії"><?= $category['name'] ?></span>
 
         <?= Html::a('<i class="fa fa-pencil"></i>', ['update', 'id' => $category['id']], [
             'class' => 'btn btn-xs btn-primary',

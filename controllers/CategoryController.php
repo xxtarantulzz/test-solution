@@ -20,7 +20,7 @@ class CategoryController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['create', 'index', 'update', 'delete', 'selected', 'list'],
+                        'actions' => ['create', 'index', 'update', 'delete', 'selected', 'list', 'ajax-change-name'],
                         'allow' => true,
                     ],
                 ],
@@ -30,9 +30,25 @@ class CategoryController extends Controller
                 'actions' => [
                     'delete' => ['POST'],
                     'selected' => ['POST'],
+                    'ajax-change-name' => ['POST']
                 ],
             ],
         ];
+    }
+
+    public function actionAjaxChangeName()
+    {
+        if(Yii::$app->request->isAjax){
+            $post = Yii::$app->request->post();
+            if(isset($post['id']) && isset($post['name'])){
+                $category = Category::findOne($post['id']);
+                if($category){
+                    $category->name = $post['name'];
+                    $category->save(false);
+                }
+            }
+
+        }
     }
 
     public function actionList()

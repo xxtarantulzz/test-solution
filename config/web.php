@@ -33,6 +33,13 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'timeZone' => 'Europe/Kiev',
+            'dateFormat' => 'yyyy-MM-dd',
+            'datetimeFormat' => 'yyyy-MM-dd HH:mm:ss',
+            'timeFormat' => 'HH:mm:ss',
+        ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             // send all mails to a file by default. You have to set

@@ -95,8 +95,8 @@ echo FancyBox::widget([
 
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
-        <p class="float-left">&copy; xpaukz <?= date('Y') ?></p>
-        <p class="float-right"><?= Yii::powered() ?></p>
+        <p class="float-left">&copy; <b>xtarantulz</b> <?= date('Y') ?></p>
+        <p class="float-right">виконав: <b>Батраков Володимир</b></p>
     </div>
 </footer>
 

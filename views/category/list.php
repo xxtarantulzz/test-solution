@@ -8,6 +8,7 @@ use app\models\Category;
 use yii\jui\DatePicker;
 use kartik\export\ExportMenu;
 use kartik\select2\Select2;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\search\CategorySearch */
@@ -72,7 +73,9 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'id',
                 'headerOptions' => ['width' => '50'],
-                'order' => DynaGrid::ORDER_FIX_LEFT
+                'order' => DynaGrid::ORDER_FIX_LEFT,
+                'vAlign' => GridView::ALIGN_MIDDLE,
+                'hAlign' => GridView::ALIGN_CENTER
             ],
 
             [
@@ -87,17 +90,21 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'headerOptions' => ['width' => '80'],
                 'contentOptions' => ['style' => 'text-align: center;'],
-                'order' => DynaGrid::ORDER_FIX_LEFT
+                'order' => DynaGrid::ORDER_FIX_LEFT,
+                'vAlign' => GridView::ALIGN_MIDDLE,
+                'hAlign' => GridView::ALIGN_CENTER
             ],
 
             [
                 'attribute' => 'name',
-                'order' => DynaGrid::ORDER_FIX_LEFT
+                'order' => DynaGrid::ORDER_FIX_LEFT,
+                'vAlign' => GridView::ALIGN_MIDDLE
             ],
 
             [
                 'attribute' => 'description',
                 'headerOptions' => ['width' => '240'],
+                'vAlign' => GridView::ALIGN_MIDDLE
             ],
 
             [
@@ -121,6 +128,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     }
                 },
                 'headerOptions' => ['width' => '150'],
+                'vAlign' => GridView::ALIGN_MIDDLE
             ],
 
             [
@@ -134,7 +142,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]),
                 'format' => 'datetime',
                 'headerOptions' => ['width' => '95'],
-                'visible' => false
+                'visible' => false,
+                'vAlign' => GridView::ALIGN_MIDDLE,
+                'hAlign' => GridView::ALIGN_CENTER
             ],
 
             [
@@ -148,7 +158,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]),
                 'format' => 'datetime',
                 'headerOptions' => ['width' => '95'],
-                'order' => DynaGrid::ORDER_FIX_RIGHT
+                'order' => DynaGrid::ORDER_FIX_RIGHT,
+                'vAlign' => GridView::ALIGN_MIDDLE,
+                'hAlign' => GridView::ALIGN_CENTER
             ],
 
             [

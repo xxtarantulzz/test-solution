@@ -141,7 +141,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ]
                 ]),
                 'format' => 'datetime',
-                'headerOptions' => ['width' => '95'],
+                'headerOptions' => ['width' => '110'],
                 'visible' => false,
                 'vAlign' => GridView::ALIGN_MIDDLE,
                 'hAlign' => GridView::ALIGN_CENTER
@@ -157,7 +157,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ]
                 ]),
                 'format' => 'datetime',
-                'headerOptions' => ['width' => '95'],
+                'headerOptions' => ['width' => '110'],
                 'order' => DynaGrid::ORDER_FIX_RIGHT,
                 'vAlign' => GridView::ALIGN_MIDDLE,
                 'hAlign' => GridView::ALIGN_CENTER
